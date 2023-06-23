@@ -11,6 +11,7 @@
 		A11A81212A447FA7000BA5ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A81202A447FA7000BA5ED /* ContentView.swift */; };
 		A11A81232A447FA8000BA5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11A81222A447FA8000BA5ED /* Assets.xcassets */; };
 		A11A81272A447FA8000BA5ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11A81262A447FA8000BA5ED /* Preview Assets.xcassets */; };
+		A1E62CD12A45B8B300B6F9C2 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A1E62CD02A45B8B300B6F9C2 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A11A81222A447FA8000BA5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A11A81242A447FA8000BA5ED /* BetterRest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterRest.entitlements; sourceTree = "<group>"; };
 		A11A81262A447FA8000BA5ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1E62CD02A45B8B300B6F9C2 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = BetterRest/SleepCalculator.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				A11A811E2A447FA7000BA5ED /* BetterRestApp.swift */,
 				A11A81202A447FA7000BA5ED /* ContentView.swift */,
 				A11A81222A447FA8000BA5ED /* Assets.xcassets */,
+				A1E62CD02A45B8B300B6F9C2 /* SleepCalculator.mlmodel */,
 				A11A81242A447FA8000BA5ED /* BetterRest.entitlements */,
 				A11A81252A447FA8000BA5ED /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E62CD12A45B8B300B6F9C2 /* SleepCalculator.mlmodel in Sources */,
 				A11A81212A447FA7000BA5ED /* ContentView.swift in Sources */,
 				A11A811F2A447FA7000BA5ED /* BetterRestApp.swift in Sources */,
 			);
