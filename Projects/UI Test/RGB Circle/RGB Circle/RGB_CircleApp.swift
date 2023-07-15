@@ -1,14 +1,14 @@
 //
-//  DrawingApp.swift
-//  Drawing
+//  RGB_CircleApp.swift
+//  RGB Circle
 //
-//  Created by Andy C on 7/13/23.
+//  Created by Andy C on 7/15/23.
 //
 
 import SwiftUI
 
 @main
-struct DrawingApp: App {
+struct RGB_CircleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
