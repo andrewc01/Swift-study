@@ -5,41 +5,41 @@
 //  Created by Andy C on 9/23/23.
 //
 
+import LocalAuthentication
 import SwiftUI
 
-enum LoadingState {
-    case loading, success, failed
-}
-
-struct LoadingView: View {
-    var body: some View {
-        Text("Loading")
-    }
-}
-
-struct SuccessView: View {
-    var body: some View {
-        Text("Success")
-    }
-}
-
-struct FailedView: View {
-    var body: some View {
-        Text("Failed")
-    }
-}
-
 struct ContentView: View {
-    var loadingState = LoadingState.loading
+    @State private var isUnlocked = false
+    
     
     var body: some View {
-        switch loadingState {
-        case .loading:
-            LoadingView()
-        case .success:
-            SuccessView()
-        case .failed:
-            FailedView()
+        VStack {
+            if isUnlocked {
+                Text("Unlocked")
+            } else {
+                Text("Locked")
+            }
+        }
+        .onAppear(perform: authenticate)
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // can use biometrics
+            let reason = "We need to unlock your data." // This is for Touch ID. Face ID option is in targets -> info
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                if success {
+                    isUnlocked = true
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            // no biometrics
         }
     }
 }
