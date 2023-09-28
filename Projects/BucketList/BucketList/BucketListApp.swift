@@ -1,14 +1,14 @@
 //
-//  Bucket_ListApp.swift
-//  Bucket List
+//  BucketListApp.swift
+//  BucketList
 //
-//  Created by Andy C on 9/23/23.
+//  Created by Andy C on 9/28/23.
 //
 
 import SwiftUI
 
 @main
-struct Bucket_ListApp: App {
+struct BucketListApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
