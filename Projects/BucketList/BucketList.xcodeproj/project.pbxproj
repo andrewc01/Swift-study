@@ -12,6 +12,7 @@
 		A151ED492AC5BBD5002B0BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A151ED482AC5BBD5002B0BCA /* Assets.xcassets */; };
 		A151ED4C2AC5BBD5002B0BCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A151ED4B2AC5BBD5002B0BCA /* Preview Assets.xcassets */; };
 		A151ED532AC5CA5C002B0BCA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151ED522AC5CA5C002B0BCA /* Location.swift */; };
+		A1E903552AD172B9003DBDC9 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E903542AD172B9003DBDC9 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A151ED482AC5BBD5002B0BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A151ED4B2AC5BBD5002B0BCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A151ED522AC5CA5C002B0BCA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Location.swift; path = BucketList/Location.swift; sourceTree = "<group>"; };
+		A1E903542AD172B9003DBDC9 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditView.swift; path = BucketList/EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		A151ED382AC5BBD4002B0BCA = {
 			isa = PBXGroup;
 			children = (
+				A1E903542AD172B9003DBDC9 /* EditView.swift */,
 				A151ED522AC5CA5C002B0BCA /* Location.swift */,
 				A151ED432AC5BBD4002B0BCA /* BucketList */,
 				A151ED422AC5BBD4002B0BCA /* Products */,
@@ -142,6 +145,7 @@
 			files = (
 				A151ED472AC5BBD4002B0BCA /* ContentView.swift in Sources */,
 				A151ED532AC5CA5C002B0BCA /* Location.swift in Sources */,
+				A1E903552AD172B9003DBDC9 /* EditView.swift in Sources */,
 				A151ED452AC5BBD4002B0BCA /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
