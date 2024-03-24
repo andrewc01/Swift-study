@@ -12,9 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            
             BackgroundView(isNight: isNight)
-            
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
                 
