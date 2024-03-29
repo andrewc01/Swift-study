@@ -55,9 +55,9 @@
 			children = (
 				A11967E32BB58BA7009A21C7 /* BarcodeScannerApp.swift */,
 				A11967E52BB58BA7009A21C7 /* BarcodeScannerView.swift */,
+				A191F14E2BB6B8A6000EDB96 /* ScannerVC.swift */,
 				A11967E72BB58BA8009A21C7 /* Assets.xcassets */,
 				A11967E92BB58BA8009A21C7 /* Preview Content */,
-				A191F14E2BB6B8A6000EDB96 /* ScannerVC.swift */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";

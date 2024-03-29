@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 
+
 protocol ScannerVCDelegate: class {
     func didFind(barcode: String)
 }
@@ -56,9 +57,28 @@ final class ScannerVC: UIViewController {
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer!.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(previewLayer!)
+        
+        captureSession.startRunning()
     }
 }
 
 extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        guard let object = metadataObjects.first else {
+            return
+        }
+        
+        guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else {
+            return
+        }
+        
+        guard let barcode = machineReadableObject.stringValue else {
+            return
+        }
+        
+        scannerDelegate?.didFind(barcode: barcode)
+    }
     
 }
