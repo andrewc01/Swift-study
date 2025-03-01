@@ -14,6 +14,7 @@
 		A12996162C31AE70005DE18D /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12996152C31AE70005DE18D /* AppetizerListView.swift */; };
 		A12996182C31AE7D005DE18D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12996172C31AE7D005DE18D /* AccountView.swift */; };
 		A129961A2C31AE84005DE18D /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12996192C31AE84005DE18D /* OrderView.swift */; };
+		A1B612792D739F5D00ED3518 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B612782D739F5C00ED3518 /* AppetizerListCell.swift */; };
 		A1D152912C355D06003731F8 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D152902C355D06003731F8 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A12996152C31AE70005DE18D /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		A12996172C31AE7D005DE18D /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A12996192C31AE84005DE18D /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		A1B612782D739F5C00ED3518 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		A1D152902C355D06003731F8 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				A1D152902C355D06003731F8 /* Appetizer.swift */,
 				A129960B2C31AD6B005DE18D /* Assets.xcassets */,
 				A129960D2C31AD6B005DE18D /* Preview Content */,
+				A1B612782D739F5C00ED3518 /* AppetizerListCell.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -107,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					A12996032C31AD69005DE18D = {
 						CreatedOnToolsVersion = 16.0;
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D152912C355D06003731F8 /* Appetizer.swift in Sources */,
+				A1B612792D739F5D00ED3518 /* AppetizerListCell.swift in Sources */,
 				A12996182C31AE7D005DE18D /* AccountView.swift in Sources */,
 				A129960A2C31AD69005DE18D /* AppetizerTabView.swift in Sources */,
 				A12996082C31AD69005DE18D /* AppetizersApp.swift in Sources */,
@@ -196,6 +200,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -259,6 +264,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -288,7 +294,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Appetizers/Preview Content\"";
-				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -317,7 +322,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Appetizers/Preview Content\"";
-				DEVELOPMENT_TEAM = KQHX6P6Q2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
